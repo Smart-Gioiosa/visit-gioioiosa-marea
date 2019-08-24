@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VisitGioiosaMarea</title>
+    <title>Visit Gioiosa Marea</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-      body, html {
-      height: 100%;
-      margin: 0;
-    }
-
-  .bg {
-    /* The image used */
-    background-image: url("/assets/gioiosa_marea.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-  </style>  
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
 </html>
